@@ -30,9 +30,9 @@ try {
 try {
     const data = fs.readFileSync('problem.txt', 'utf8');
     // spread syntax to make string array
-    let array = [...data]
-    // use map to convert array of strings to array of 1 and -1
-    array = array.map(c => c === '(' ? 1 : c === ')' ? -1 : 0)
+    let array = [...data];
+    // use map to convert array of strings to array of 1 and -1. 0 is the edge case.
+    array = array.map(c => c === '(' ? 1 : c === ')' ? -1 : 0);
     // use reduce to act as a 'sum' and sum the array to get our answer.
     let result = array.reduce((result, term) => result + term, 0);
     console.log(result);
