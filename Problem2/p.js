@@ -24,7 +24,8 @@ function problem1() {
         let rows = data.split("\r\n").map(x => x.split(" ").map(x => parseInt(x)));
         let safe = 0;
         for (row of rows) {
-            safe += validRow(row) ? 1 : 0;
+            let valid = validRow(row);
+            safe += valid ? 1 : 0;
         }
         return safe;
     } catch (err) {
