@@ -140,5 +140,5 @@ function problem2() {
     }
 }
 
-// console.log(problem1())
+console.log(problem1())
 console.log(problem2())
