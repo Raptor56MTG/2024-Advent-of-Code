@@ -64,7 +64,7 @@ function problem2() {
                         all_rules[i] = true;
                     }
                 }
-                fixed = all_rules.every(value => value === true)
+                fixed = all_rules.every(value => value === true);
             }
             sum += page[Math.floor(page.length / 2)];
         }
