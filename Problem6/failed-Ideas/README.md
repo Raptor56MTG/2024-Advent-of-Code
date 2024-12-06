@@ -1,0 +1,3 @@
+# Failed Ideas
+
+I am going to be storing failed ideas here. None of these ended up working, But there might be something here. You should expect mostly spaghetti code and nonsense. These were mostly brainstorm ideas that failed and were written under time constraints and late night coding shenanigans. It is possible I came close to something good and could not quite cross the finish line. However, I expect that the reality is these are flawed and have edge cases that cause them to not work. Regardless, it is not worth the time of anyone but myself to parse through this code.
