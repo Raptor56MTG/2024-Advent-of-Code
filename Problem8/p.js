@@ -46,7 +46,6 @@ function getAllAntinodes(point1, point2, grid) {
     let m = (point1[1] - point2[1]) / (point1[0] - point2[0])
     // b = y - mx
     let b = point1[1] - (m * point1[0])
-
     for (let i = 0; i < grid[0].length; i++) {
         let x = i;
         let y = (m * x) + b;
