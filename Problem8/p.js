@@ -2,7 +2,8 @@ const { p } = require('../FastPrint/print.js');
 const fs = require('fs');
 
 
-function getAntennas(grid, antennas) {
+function getAntennas(grid) {
+    let antennas = new Map();
     for (let i = 0; i < grid.length; i++) {
         for (let j = 0; j < grid[0].length; j++) {
             if (grid[i][j] != '.') {
@@ -62,8 +63,7 @@ function problem1() {
     try {
         const data = fs.readFileSync('problem.txt', 'utf8');
         let grid = data.split('\r\n').map(x => x.split(""));
-        let antennas = new Map();
-        antennas = getAntennas(grid, antennas);
+        let antennas = getAntennas(grid);
         let antinodes = [];
         for (const antenna of antennas.values()) {
             for (let i = 0; i < antenna.length - 1; i++) {
@@ -83,8 +83,7 @@ function problem2() {
     try {
         const data = fs.readFileSync('problem.txt', 'utf8');
         let grid = data.split('\r\n').map(x => x.split(""));
-        let antennas = new Map();
-        antennas = getAntennas(grid, antennas);
+        let antennas = getAntennas(grid);
         let antinodes = [];
         for (const antenna of antennas.values()) {
             for (let i = 0; i < antenna.length - 1; i++) {
